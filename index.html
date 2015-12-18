@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Cropper with full crop box">
+  <meta name="keywords" content="HTML, CSS, JS, JavaScript, jQuery plugin, image cropping, image crop, image move, image zoom, image rotate, image scale, front-end, frontend, web development">
+  <meta name="author" content="Fengyuan Chen">
+  <title>Cropper</title>
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/main.css">
+  <style>
+    .container {
+      max-width: 960px;
+    }
+
+    img {
+      max-width: 100%;
+    }
+  </style>
+
+  <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+  <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+  <![endif]-->
+</head>
+<body>
+
+  <div class="container">
+    <div class="row">
+        <div id="image-area">
+          <img id="image" src="" alt="Picture">
+        </div>
+        <div class="btn-group">
+          <label title="Upload image file" for="inputImage" class="btn btn-primary btn-upload">
+            <input type="file" accept="image/*" name="file" id="inputImage" class="sr-only">
+            <span title="" data-toggle="tooltip" class="docs-tooltip" data-original-title="Import image with Blob URLs">
+              <span class="fa fa-upload"></span>
+            </span>
+          </label>
+          <button title="Desaturate" data-method="desaturate" class="btn btn-primary btn-desaturate disabled" type="button">
+            <span title="" data-toggle="tooltip" class="docs-tooltip" data-original-title="$().cropper('destroy')">
+              desaturate
+            </span>
+          </button>
+          <button title="Download" data-method="download" class="btn btn-primary btn-download disabled" type="button">
+            <span title="" data-toggle="tooltip" class="docs-tooltip" data-original-title="download image">
+              <span class="fa fa-download"></span>
+            </span>
+          </button>
+        </div>
+    </div>
+  </div>
+
+  <!-- Scripts -->
+  <script src="js/jquery.min.js"></script>
+  <script src="js/fabric-modified.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/3.2.0/imagesloaded.pkgd.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/cropper.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
